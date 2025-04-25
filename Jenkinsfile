@@ -11,7 +11,7 @@ pipeline {
         stage('Ejecutar pruebas') {
             steps {
                 echo 'Ejecutando pruebas...'
-                sh 'python -m unittest discover -s . -p "*_test.py"'
+                sh 'python -m unittest test_pago_laboral.py'
             }
         }
 
